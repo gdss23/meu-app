@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<<link rel="manifest" href="/manifest.json">>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>BinaryPro Cloud</title>
@@ -288,5 +288,11 @@
         // Iniciar WebSocket
         connectWebSocket();
     </script>
-</body>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+</script></body>
 </html>
