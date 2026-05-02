@@ -1,5 +1,5 @@
 {
-  "name": "meu-app de teste",
+  "name": "Meu-App de teste",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": { "start": "node server.js" },
